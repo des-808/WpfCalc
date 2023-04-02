@@ -13,12 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static System.Net.Mime.MediaTypeNames;
-//#define ZD5
+
 namespace WpfCalc
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -32,23 +29,22 @@ namespace WpfCalc
             tmp = new_sample.Text;
             if(tmp.Length > 0) { new_sample.Text = tmp.Remove(tmp.Length - 1); }// вырезаем последний символ
         }
-        private void btn_Div_click(object sender, RoutedEventArgs e) { tmp = new_sample.Text; tmp += "/"; new_sample.Text = tmp; }
-        private void btn_7_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "7"; new_sample.Text = tmp; }
-        private void btn_8_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "8"; new_sample.Text = tmp; }
-        private void btn_9_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "9"; new_sample.Text = tmp; }
-        private void btn_Mul_click(object sender, RoutedEventArgs e) { tmp = new_sample.Text; tmp += "*"; new_sample.Text = tmp; }
-        private void btn_4_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "4"; new_sample.Text = tmp; }
-        private void btn_5_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "5"; new_sample.Text = tmp; }
-        private void btn_6_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "6"; new_sample.Text = tmp; }
-        private void btn_Sub_click(object sender, RoutedEventArgs e) { tmp = new_sample.Text; tmp += "-"; new_sample.Text = tmp; }
-        private void btn_1_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "1"; new_sample.Text = tmp; }
-        private void btn_2_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "2"; new_sample.Text = tmp; }
-        private void btn_3_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "3"; new_sample.Text = tmp; }
-        private void btn_Add_click(object sender, RoutedEventArgs e) { tmp = new_sample.Text; tmp += "+"; new_sample.Text = tmp; }
-        private void btn_Tchk_click(object sender, RoutedEventArgs e) { tmp = new_sample.Text; tmp += "."; new_sample.Text = tmp; }
-        private void btn_0_click(object sender, RoutedEventArgs e){ tmp = new_sample.Text; tmp += "0"; new_sample.Text = tmp; }
+        private void btn_Div_click(object sender, RoutedEventArgs e)    { new_sample.Text += "/"; }
+        private void btn_7_click(object sender, RoutedEventArgs e)      { new_sample.Text += "7"; }
+        private void btn_8_click(object sender, RoutedEventArgs e)      { new_sample.Text += "8"; }
+        private void btn_9_click(object sender, RoutedEventArgs e)      { new_sample.Text += "9"; }
+        private void btn_Mul_click(object sender, RoutedEventArgs e)    { new_sample.Text += "*"; }
+        private void btn_4_click(object sender, RoutedEventArgs e)      { new_sample.Text += "4"; }
+        private void btn_5_click(object sender, RoutedEventArgs e)      { new_sample.Text += "5"; }
+        private void btn_6_click(object sender, RoutedEventArgs e)      { new_sample.Text += "6"; }
+        private void btn_Sub_click(object sender, RoutedEventArgs e)    { new_sample.Text += "-"; }
+        private void btn_1_click(object sender, RoutedEventArgs e)      { new_sample.Text += "1"; }
+        private void btn_2_click(object sender, RoutedEventArgs e)      { new_sample.Text += "2"; }
+        private void btn_3_click(object sender, RoutedEventArgs e)      { new_sample.Text += "3"; }
+        private void btn_Add_click(object sender, RoutedEventArgs e)    { new_sample.Text += "+"; }
+        private void btn_Tchk_click(object sender, RoutedEventArgs e)   { new_sample.Text += "."; }
+        private void btn_0_click(object sender, RoutedEventArgs e)      { new_sample.Text += "0"; }
         private void btn_Equals_click(object sender, RoutedEventArgs e){
-            
             string? operation = new_sample.Text;
             char[] delimiterChars = { '+', '-', '*', '/', ',', ' ' };
             char[] delimiterInt = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ' ' };
@@ -69,15 +65,9 @@ namespace WpfCalc
             }
             old_sample.Text = $"{Left}{operators}{Right}={otvet}";
             new_sample.Text = otvet.ToString();
-            
-
         }
 
-
-
-
-
-
+        private void tmp_text(string text) { }
 
     }
 }
