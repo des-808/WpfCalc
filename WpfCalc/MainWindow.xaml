@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCalc"
         mc:Ignorable="d"
-        Title="My Calculator" Height="320" Width="220" MinWidth="220" MinHeight="320" MaxWidth="320" MaxHeight="480">
+        Title="My Calculator" Width="320" Height="440" MinWidth="320" MinHeight="440" MaxWidth="320" MaxHeight="440">
     <Grid  ShowGridLines="True" Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -22,8 +22,8 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="old_sample"  Text=""   Background="#FF413E3E"  FontSize="14"  Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print"/>
-        <TextBlock x:Name="new_sample"  Text="0"  Background="Black"      FontSize="20"  Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print" />
+        <TextBlock x:Name="old_sample"  Text=""   Background="#FF413E3E"  FontSize="14"  Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print" FlowDirection="RightToLeft"/>
+        <TextBlock x:Name="new_sample"  Text="0"  Background="Black"      FontSize="20"  Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print" FlowDirection="RightToLeft" />
 
         <Button x:Name="button_CE"      Content="CE"   Grid.Row="2" Grid.Column="0" MinWidth="30" MinHeight="20" Click="btn_CE_click"  />
         <Button x:Name="button_C"       Content="C"    Grid.Row="2" Grid.Column="1" MinWidth="30" MinHeight="20" Click="btn_C_click"  />
@@ -48,15 +48,6 @@
         <Button x:Name="button_Tchk"    Content="."     Grid.Row="6" Grid.Column="0" MinWidth="30" MinHeight="20" Click="btn_Tchk_click" />
         <Button x:Name="button_0"       Content="0"     Grid.Row="6" Grid.Column="1" MinWidth="30" MinHeight="20" Click="btn_0_click"/>
         <Button x:Name="button_Equals"  Content="="     Grid.Row="6" Grid.Column="2" MinWidth="70" MinHeight="20" Click="btn_Equals_click" Grid.ColumnSpan="2" />
-
-
-
-
-
-
-
-
-
     </Grid>
 </Window>
 
