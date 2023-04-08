@@ -35,16 +35,16 @@ namespace WpfCalc
         }
         
         //private void btn_1_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = new_sample.Text.Equals("0") ? new_sample.Text = "1" : new_sample.Text += "1"; }
-        private void btn_1_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "1"); }
-        private void btn_2_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "2"); }
-        private void btn_3_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "3"); }
-        private void btn_4_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "4"); }
-        private void btn_5_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "5"); }
-        private void btn_6_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "6"); }
-        private void btn_7_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "7"); }
-        private void btn_8_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "8"); }
-        private void btn_9_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "9"); }
-        private void btn_0_click(object sender, RoutedEventArgs e)      { del_new_samle(); xxx = iss_zero(new_sample.Text, "0"); }
+        private void btn_1_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "1"); }
+        private void btn_2_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "2"); }
+        private void btn_3_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "3"); }
+        private void btn_4_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "4"); }
+        private void btn_5_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "5"); }
+        private void btn_6_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "6"); }
+        private void btn_7_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "7"); }
+        private void btn_8_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "8"); }
+        private void btn_9_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "9"); }
+        private void btn_0_click(object sender, RoutedEventArgs e)      { del_new_sample(); xxx = iss_zero(new_sample.Text, "0"); }
         private void btn_Tchk_click(object sender, RoutedEventArgs e)   { new_sample.Text += "."; }
         private void btn_Add_click(object sender, RoutedEventArgs e)    { old_sample.Text = "+"; old_sample.Text += new_sample.Text; bool_deystvie = true; operaciya = '+'; deystviee(); }
         private void btn_Sub_click(object sender, RoutedEventArgs e)    { old_sample.Text = "-"; old_sample.Text += new_sample.Text; bool_deystvie = true; operaciya = '-'; deystviee(); }
@@ -103,7 +103,7 @@ namespace WpfCalc
             //new_sample.Text = otvet_string;
             //}
         }
-        private void del_new_samle() { if (bool_deystvie) { new_sample.Text = ""; bool_deystvie = false; } }
+        private void del_new_sample() { if (bool_deystvie) { new_sample.Text = ""; bool_deystvie = false; } }
         
         class CalculatoR {
             public string revers_string(string text)
