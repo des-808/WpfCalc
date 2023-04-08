@@ -79,29 +79,7 @@ namespace WpfCalc
             return text; 
         }
         private void deystviee() {
-            //if (old_sample.Text != new_sample.Text) { 
-            //char[] delimiterChars = { '+', '-', '*', '/' };
-            ////char[] delimiterInt = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
-            //string[] xz = old_sample.Text.Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries);
-            //string[] xy = new_sample.Text.Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries);
-            //double Left = Convert.ToDouble(xz[0]);
-            //double Right = Convert.ToDouble(xy[0]);
-            //double otvet = 0;
-            //switch (deystvie)
-            //{
-            //    case 1: otvet = mathematicA.Add(Left, Right); break;
-            //    case 2: otvet = mathematicA.Sub(Left, Right); break;
-            //    case 3: otvet = mathematicA.Mul(Left, Right); break;
-            //    case 4: otvet = mathematicA.Div(Left, Right); break;
-            //    default:
-            //        break;
-            //}
-            //string otvet_string = otvet.ToString();
-            //if (otvet < 0) { otvet_string = revers_string(otvet_string); }
-            ////old_sample.Text = $"{Left}{operators}{Right}={otvet}";
-            //old_sample.Text = $"{otvet_string}={revers_string(old_sample.Text) + new_sample.Text}";//$"{Left}{operators}{Right}={otvet}";
-            //new_sample.Text = otvet_string;
-            //}
+            
         }
         private void del_new_sample() { if (bool_deystvie) { new_sample.Text = ""; bool_deystvie = false; } }
         
