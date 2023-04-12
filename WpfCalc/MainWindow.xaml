@@ -22,8 +22,8 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="old_sample"  Text=""   Background="#FF413E3E"  FontSize="22"  Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print" FlowDirection="RightToLeft" Margin="2,2,2,2" FontWeight="Bold"/>
-        <TextBlock x:Name="new_sample"  Text="0"  Background="Black"      FontSize="36"  Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print" FlowDirection="RightToLeft" Margin="2,2,2,2" FontWeight="Bold" />
+        <TextBlock x:Name="old_sample"  Text=""   Background="#FF413E3E"  FontSize="22"  Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print" Margin="2,2,2,2" FontWeight="Bold" FlowDirection="RightToLeft"/>
+        <TextBlock x:Name="new_sample"  Text="0"  Background="Black"      FontSize="36"  Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="4" Foreground="#FF37A815" FontFamily="Segoe Print" Margin="2,2,2,2" FontWeight="Bold" FlowDirection="RightToLeft" />
 
         <Button x:Name="button_CE"      Content="CE"   Grid.Row="2" Grid.Column="0" MinWidth="30" MinHeight="20" Click="btn_CE_click"   FontSize="24" Margin="4,4,4,4"  />
         <Button x:Name="button_C"       Content="C"    Grid.Row="2" Grid.Column="1" MinWidth="30" MinHeight="20" Click="btn_C_click"    FontSize="24" Margin="4,4,4,4"  />
